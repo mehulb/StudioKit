@@ -80,14 +80,7 @@
     //return [NSString stringWithFormat:@"%d.%d.%d", duration.hour, duration.minute, duration.second];
     return [formatter stringFromDate:duration];
 }
-+(UIColor *) generateRandomLightColor
-{
-    int r = RANDOM_INT(200, 250);
-    int g = RANDOM_INT(200, 250);
-    int b = RANDOM_INT(200, 250);
-    
-    return RGB(r, g, b);
-}
+
 
 #pragma mark - Array = String = Array
 +(NSString *) generateStringFromArray:(NSArray *)array andAddString:(NSString *)string
@@ -133,73 +126,6 @@
     if(!date)
         return @"null";
     return [NSString stringWithFormat:@"%f", [date timeIntervalSince1970]];
-}
-
-#pragma mark - Reachability Methods
-// check network availability
-+ (BOOL) checkNetworkStatus
-{
-    // called after network status changes
-    bool status = NO;
-    Reachability *internetReachable = [Reachability reachabilityForInternetConnection];
-    NetworkStatus connStatus = [internetReachable currentReachabilityStatus];
-    switch (connStatus)
-    
-    {
-        case NotReachable:
-        {
-            //return NO;
-            status = NO;
-            break;
-        }
-        case ReachableViaWiFi:
-        {
-            //return YES;
-            status = YES;
-            break;
-        }
-        case ReachableViaWWAN:
-        {
-            //return YES;
-            status = YES;
-            break;
-        }
-    }
-    
-    status = status && [StudioKit checkInternetStatus];
-    
-    return status;
-}
-+ (BOOL) checkInternetStatus
-{
-    // called after network status changes
-    
-    bool status;
-    Reachability *hostReachable = [Reachability reachabilityWithHostName:@"www.apple.com"];
-    NetworkStatus connStatus = [hostReachable currentReachabilityStatus];
-    switch (connStatus)
-    
-    {
-        case NotReachable:
-        {
-            //return NO;
-            status = NO;
-            break;
-        }
-        case ReachableViaWiFi:
-        {
-            //return YES;
-            status = YES;
-            break;
-        }
-        case ReachableViaWWAN:
-        {
-            //return YES;
-            status = YES;
-            break;
-        }
-    }
-    return status;
 }
 
 #pragma mark - Color Handlers
