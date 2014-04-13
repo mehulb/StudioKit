@@ -19,6 +19,9 @@
 		2AE0D36018FA66B100719FA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0D34818FA66B100719FA5 /* UIKit.framework */; };
 		2AE0D36818FA66B100719FA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE0D36618FA66B100719FA5 /* InfoPlist.strings */; };
 		2AE0D36A18FA66B100719FA5 /* StudioKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D36918FA66B100719FA5 /* StudioKitTests.m */; };
+		2AE0D37B18FA676B00719FA5 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D37618FA676B00719FA5 /* UIActionSheet+Blocks.m */; };
+		2AE0D37C18FA676B00719FA5 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D37818FA676B00719FA5 /* UIAlertView+Blocks.m */; };
+		2AE0D37D18FA676B00719FA5 /* UIButton+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D37A18FA676B00719FA5 /* UIButton+Blocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		2AE0D36518FA66B100719FA5 /* StudioKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StudioKitTests-Info.plist"; sourceTree = "<group>"; };
 		2AE0D36718FA66B100719FA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2AE0D36918FA66B100719FA5 /* StudioKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudioKitTests.m; sourceTree = "<group>"; };
+		2AE0D37518FA676B00719FA5 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		2AE0D37618FA676B00719FA5 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		2AE0D37718FA676B00719FA5 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		2AE0D37818FA676B00719FA5 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		2AE0D37918FA676B00719FA5 /* UIButton+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Blocks.h"; sourceTree = "<group>"; };
+		2AE0D37A18FA676B00719FA5 /* UIButton+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Blocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +86,7 @@
 		2AE0D33818FA66B100719FA5 = {
 			isa = PBXGroup;
 			children = (
+				2AE0D37318FA676B00719FA5 /* Classes */,
 				2AE0D34A18FA66B100719FA5 /* StudioKit */,
 				2AE0D36318FA66B100719FA5 /* StudioKitTests */,
 				2AE0D34318FA66B100719FA5 /* Frameworks */,
@@ -144,6 +154,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2AE0D37318FA676B00719FA5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2AE0D37418FA676B00719FA5 /* UIKit+Blocks */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2AE0D37418FA676B00719FA5 /* UIKit+Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				2AE0D37518FA676B00719FA5 /* UIActionSheet+Blocks.h */,
+				2AE0D37618FA676B00719FA5 /* UIActionSheet+Blocks.m */,
+				2AE0D37718FA676B00719FA5 /* UIAlertView+Blocks.h */,
+				2AE0D37818FA676B00719FA5 /* UIAlertView+Blocks.m */,
+				2AE0D37918FA676B00719FA5 /* UIButton+Blocks.h */,
+				2AE0D37A18FA676B00719FA5 /* UIButton+Blocks.m */,
+			);
+			path = "UIKit+Blocks";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,6 +223,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "9P Studio";
 				TargetAttributes = {
+					2AE0D34018FA66B100719FA5 = {
+						DevelopmentTeam = UY8Z6274SM;
+					};
 					2AE0D35B18FA66B100719FA5 = {
 						TestTargetID = 2AE0D34018FA66B100719FA5;
 					};
@@ -241,6 +275,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AE0D35518FA66B100719FA5 /* SKAppDelegate.m in Sources */,
+				2AE0D37D18FA676B00719FA5 /* UIButton+Blocks.m in Sources */,
+				2AE0D37C18FA676B00719FA5 /* UIAlertView+Blocks.m in Sources */,
+				2AE0D37B18FA676B00719FA5 /* UIActionSheet+Blocks.m in Sources */,
 				2AE0D35118FA66B100719FA5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,9 +397,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StudioKit/StudioKit-Prefix.pch";
 				INFOPLIST_FILE = "StudioKit/StudioKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -373,9 +412,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StudioKit/StudioKit-Prefix.pch";
 				INFOPLIST_FILE = "StudioKit/StudioKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
