@@ -22,6 +22,7 @@
 		2AE0D37B18FA676B00719FA5 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D37618FA676B00719FA5 /* UIActionSheet+Blocks.m */; };
 		2AE0D37C18FA676B00719FA5 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D37818FA676B00719FA5 /* UIAlertView+Blocks.m */; };
 		2AE0D37D18FA676B00719FA5 /* UIButton+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D37A18FA676B00719FA5 /* UIButton+Blocks.m */; };
+		2AE0D38018FA67B700719FA5 /* StudioKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D37F18FA67B700719FA5 /* StudioKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		2AE0D37818FA676B00719FA5 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		2AE0D37918FA676B00719FA5 /* UIButton+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Blocks.h"; sourceTree = "<group>"; };
 		2AE0D37A18FA676B00719FA5 /* UIButton+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Blocks.m"; sourceTree = "<group>"; };
+		2AE0D37E18FA67B700719FA5 /* StudioKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudioKit.h; sourceTree = "<group>"; };
+		2AE0D37F18FA67B700719FA5 /* StudioKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudioKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 		2AE0D37318FA676B00719FA5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2AE0D37E18FA67B700719FA5 /* StudioKit.h */,
+				2AE0D37F18FA67B700719FA5 /* StudioKit.m */,
 				2AE0D37418FA676B00719FA5 /* UIKit+Blocks */,
 			);
 			path = Classes;
@@ -274,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE0D38018FA67B700719FA5 /* StudioKit.m in Sources */,
 				2AE0D35518FA66B100719FA5 /* SKAppDelegate.m in Sources */,
 				2AE0D37D18FA676B00719FA5 /* UIButton+Blocks.m in Sources */,
 				2AE0D37C18FA676B00719FA5 /* UIAlertView+Blocks.m in Sources */,
