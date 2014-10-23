@@ -26,14 +26,14 @@
 #define CLEAR_COLOR [UIColor clearColor]
 #define LIGHT_TEXT_COLOR [UIColor lightTextColor]
 #define DARK_TEXT_COLOR [UIColor darkTextColor]
-#define GROUP_TABLEVIEW_BACKGROUND [UIColor groupTableViewBackgroundColor]
-#define VIEW_FLIPSIDE_BACKGROUND [UIColor viewFlipsideBackgroundColor]
-#define SCROLLVIEW_TEXTURED_BACKGROUND [UIColor scrollViewTexturedBackgroundColor]
-#define UNDER_PAGE_BACKGROUND [UIColor underPageBackgroundColor]
+#define GROUP_TABLEVIEW_BACKGROUND [UIColor groupTableViewBackgroundColor] __depricated
+#define VIEW_FLIPSIDE_BACKGROUND [UIColor viewFlipsideBackgroundColor] ____depricated
+#define SCROLLVIEW_TEXTURED_BACKGROUND [UIColor scrollViewTexturedBackgroundColor] __depricated
+#define UNDER_PAGE_BACKGROUND [UIColor underPageBackgroundColor] __depricated
 
 #define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #define RGB(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
-#define RGBhex(hexCode) [StudioKit colorFromHex:hexCode]
+#define RGBHex(hexCode) [StudioKit colorFromHex:hexCode]
 
 @interface SKColor : NSObject
 

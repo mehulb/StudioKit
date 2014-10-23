@@ -8,8 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
-//#define COINS_IN_USER_DEFAULTS @"userdefaultsCoins" //Key for Coins in App User Defaults
-//#define HINTS_IN_USER_DEFAULTS @"userdefaultsCoins" //
+#define SCREEN_BOUNDS [StudioKit currentScreenBoundsDependOnOrientation]
+
+// To String converters
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+#define IS_RETINA ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && ([UIScreen mainScreen].scale == 2.0))
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+#define IS_IOS_8_OR_LATER SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")
+#define IS_IOS_7_OR_LATER SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")
+#define IS_IOS_6_OR_EARLIER SYSTEM_VERSION_LESS_THAN(@"7.0")
 
 // To String converters
 
@@ -19,7 +32,6 @@
 
 #define DegreesToRadians(x) ((x) * M_PI / 180.0)
 
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 #define PAD_L_WIDTH 1024
 #define PAD_L_HEIGHT 748
 #define PAD_P_WIDTH 768
@@ -61,35 +73,6 @@
 #define AddShadow(object ,color, x, y, opacity, radius) object.layer.shadowColor=color.CGColor; object.layer.shadowOffset=CGSizeMake(x,y); object.layer.shadowOpacity=opacity; object.layer.shadowRadius=radius; object.layer.shouldRasterize = YES; object.layer.rasterizationScale = [UIScreen mainScreen].scale
 #define RemoveShadow(object) object.layer.shadowColor=WHITE_COLOR.CGColor; object.layer.shadowOffset=CGSizeMake(0,0); object.layer.shadowOpacity=0.0; object.layer.shadowRadius=0.0
 
-#define TextAlignLeft() (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) ? NSTextAlignmentLeft : UITextAlignmentLeft
-#define TextAlignRight() (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) ? NSTextAlignmentRight : UITextAlignmentRight
-#define TextAlignCenter() (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) ? NSTextAlignmentCenter : UITextAlignmentCenter
-#define LineBreakModeWordWrap() ((SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) ? NSLineBreakByWordWrapping : UILineBreakModeWordWrap)
-
-
-
-
-
-/*
-#define HELVETICA @"Helvetica"
-#define HELVETICA_BOLD @"Helvetica-Bold"
-#define OPTIMA_REGULAR @"Optima-Regular"
-#define OPTIMA_BOLD @"Optima-Bold"
-#define TIMESNEWROMAN @"TimesNewRomanPSMT"
-#define TIMESNEWROMAN_BOLD @"TimesNewRomanPS-BoldMT"
-#define BASKERVILLE_SEMIBOLD @"Baskerville-SemiBold"
-#define BASKERVILLE @"Baskerville"
-#define GURMUKHI @"GurmukhiMN"
-#define GURMUKHI_BOLD @"GurmukhiMN-Bold"
-#define GEORGIA @"Georgia"
-#define GEORGIA_BOLD @"Georgia-Bold"
- */
-
-#define NULL_TIME @"00.00.00"
-#define NULL_STRING @"null"
-#define LOGIN @"login"
-#define LOGOUT @"logout"
-
 @interface StudioKit : NSObject
 
 +(NSString *) currentDate;
@@ -111,4 +94,14 @@
 
 +(UIImage*)imageWithBorderFromImage:(UIImage*)source context:(CGContextRef) context;
 
++ (CGRect)currentScreenBoundsDependOnOrientation;
+
 @end
+
+@interface NSDictionary (ToString)
+- (NSString *) toString;
+@end
+@interface NSArray (ToString)
+- (NSString *) toString;
+@end
+

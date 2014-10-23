@@ -25,6 +25,7 @@
 		2AE0D38018FA67B700719FA5 /* StudioKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D37F18FA67B700719FA5 /* StudioKit.m */; };
 		2AE0D38718FA68A800719FA5 /* SKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D38618FA68A800719FA5 /* SKColor.m */; };
 		2AE0D38A18FA6AE400719FA5 /* SKFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D38918FA6AE400719FA5 /* SKFonts.m */; };
+		2AFC406119F8C93900C80D59 /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC406019F8C93900C80D59 /* NSDate+Components.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		2AE0D38618FA68A800719FA5 /* SKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKColor.m; sourceTree = "<group>"; };
 		2AE0D38818FA6AE400719FA5 /* SKFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFonts.h; sourceTree = "<group>"; };
 		2AE0D38918FA6AE400719FA5 /* SKFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFonts.m; sourceTree = "<group>"; };
+		2AFC405F19F8C93900C80D59 /* NSDate+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Components.h"; sourceTree = "<group>"; };
+		2AFC406019F8C93900C80D59 /* NSDate+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Components.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,7 @@
 		2AE0D37318FA676B00719FA5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2AFC405E19F8C92700C80D59 /* SKDate */,
 				2AE0D37E18FA67B700719FA5 /* StudioKit.h */,
 				2AE0D37F18FA67B700719FA5 /* StudioKit.m */,
 				2AE0D37418FA676B00719FA5 /* UIKit+Blocks */,
@@ -188,6 +192,15 @@
 				2AE0D37A18FA676B00719FA5 /* UIButton+Blocks.m */,
 			);
 			path = "UIKit+Blocks";
+			sourceTree = "<group>";
+		};
+		2AFC405E19F8C92700C80D59 /* SKDate */ = {
+			isa = PBXGroup;
+			children = (
+				2AFC405F19F8C93900C80D59 /* NSDate+Components.h */,
+				2AFC406019F8C93900C80D59 /* NSDate+Components.m */,
+			);
+			path = SKDate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +304,7 @@
 			files = (
 				2AE0D38018FA67B700719FA5 /* StudioKit.m in Sources */,
 				2AE0D35518FA66B100719FA5 /* SKAppDelegate.m in Sources */,
+				2AFC406119F8C93900C80D59 /* NSDate+Components.m in Sources */,
 				2AE0D37D18FA676B00719FA5 /* UIButton+Blocks.m in Sources */,
 				2AE0D37C18FA676B00719FA5 /* UIAlertView+Blocks.m in Sources */,
 				2AE0D38A18FA6AE400719FA5 /* SKFonts.m in Sources */,
@@ -499,6 +513,7 @@
 				2AE0D36F18FA66B200719FA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AE0D37018FA66B200719FA5 /* Build configuration list for PBXNativeTarget "StudioKitTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +522,7 @@
 				2AE0D37218FA66B200719FA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

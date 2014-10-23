@@ -187,5 +187,70 @@
     return testImg;
 }
 
++ (CGRect)currentScreenBoundsDependOnOrientation
+{
+    
+    CGRect screenBounds = [UIScreen mainScreen].bounds ;
+    CGFloat width = CGRectGetWidth(screenBounds)  ;
+    CGFloat height = CGRectGetHeight(screenBounds) ;
+    UIInterfaceOrientation interfaceOrientation = [UIApplication sharedApplication].statusBarOrientation;
+    
+    if(UIInterfaceOrientationIsPortrait(interfaceOrientation)){
+        screenBounds.size = CGSizeMake(width, height);
+    }else if(UIInterfaceOrientationIsLandscape(interfaceOrientation)){
+        screenBounds.size = CGSizeMake(height, width);
+    }
+    
+    //NSLog(@"%f %f", width, height);
+    //NSLog(@"^^^ %f %f", screenBounds.size.width, screenBounds.size.height);
+    
+    return screenBounds ;
+}
+
+@end
+
+@implementation NSDictionary (ToString)
+
+- (NSString *)toString
+{
+    NSString *jsonString = nil;
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
+                                                       options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+                                                         error:&error];
+    
+    if (! jsonData)
+    {
+        NSLog(@"Got an error: %@", error);
+    }
+    else
+    {
+        jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }
+    return jsonString;
+}
+
+@end
+
+@implementation NSArray (ToString)
+
+- (NSString *)toString
+{
+    NSString *jsonString = nil;
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
+                                                       options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+                                                         error:&error];
+    
+    if (! jsonData)
+    {
+        NSLog(@"Got an error: %@", error);
+    }
+    else
+    {
+        jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }
+    return jsonString;
+}
 
 @end
