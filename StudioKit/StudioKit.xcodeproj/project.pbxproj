@@ -19,6 +19,7 @@
 		2A2541D01A04F79000729D6B /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541C71A04F79000729D6B /* UIActionSheet+Blocks.m */; };
 		2A2541D11A04F79000729D6B /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541C91A04F79000729D6B /* UIAlertView+Blocks.m */; };
 		2A2541D21A04F79000729D6B /* UIButton+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541CB1A04F79000729D6B /* UIButton+Blocks.m */; };
+		2A2542961A04F9AB00729D6B /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2542951A04F9AB00729D6B /* KeychainWrapper.m */; };
 		2AE0D34518FA66B100719FA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0D34418FA66B100719FA5 /* Foundation.framework */; };
 		2AE0D34718FA66B100719FA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0D34618FA66B100719FA5 /* CoreGraphics.framework */; };
 		2AE0D34918FA66B100719FA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0D34818FA66B100719FA5 /* UIKit.framework */; };
@@ -61,6 +62,8 @@
 		2A2541C91A04F79000729D6B /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		2A2541CA1A04F79000729D6B /* UIButton+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Blocks.h"; sourceTree = "<group>"; };
 		2A2541CB1A04F79000729D6B /* UIButton+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Blocks.m"; sourceTree = "<group>"; };
+		2A2542941A04F9AB00729D6B /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		2A2542951A04F9AB00729D6B /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		2AE0D34118FA66B100719FA5 /* StudioKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudioKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE0D34418FA66B100719FA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2AE0D34618FA66B100719FA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +129,16 @@
 			);
 			name = "UIKit+Blocks";
 			path = "StudioKit/UIKit+Blocks";
+			sourceTree = SOURCE_ROOT;
+		};
+		2A2542931A04F9AB00729D6B /* KeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				2A2542941A04F9AB00729D6B /* KeychainWrapper.h */,
+				2A2542951A04F9AB00729D6B /* KeychainWrapper.m */,
+			);
+			name = KeychainWrapper;
+			path = StudioKit/KeychainWrapper;
 			sourceTree = SOURCE_ROOT;
 		};
 		2AE0D33818FA66B100719FA5 = {
@@ -194,6 +207,7 @@
 		2AE0D37318FA676B00719FA5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2A2542931A04F9AB00729D6B /* KeychainWrapper */,
 				2A2541BC1A04F79000729D6B /* SKColor.h */,
 				2A2541BD1A04F79000729D6B /* SKColor.m */,
 				2A2541BE1A04F79000729D6B /* SKDate */,
@@ -315,6 +329,7 @@
 				2A2541CE1A04F79000729D6B /* SKFonts.m in Sources */,
 				2A2541CD1A04F79000729D6B /* NSDate+Components.m in Sources */,
 				2A2541B91A04F77800729D6B /* main.m in Sources */,
+				2A2542961A04F9AB00729D6B /* KeychainWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
