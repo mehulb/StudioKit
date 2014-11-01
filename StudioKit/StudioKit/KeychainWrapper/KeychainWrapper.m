@@ -6,11 +6,12 @@
 //  Copyright (c) 2014 Rail Pass / Synapsys Technosolutions Tech. All rights reserved.
 //
 
-NSString * const kUUIDKeychainKey = @"com.synapsystech.railpass.uuid";
-NSString * const kIDFAKeychainKey = @"com.synapsystech.railpass.idfa";
-NSString * const kIDFVKeychainKey = @"com.synapsystech.railpass.idfv";
-NSString * const kMacAddressKeychainKey = @"com.synapsystech.railpass.macaddress";
-NSString * const kKeychainService = @"com.synapsystech.railpass.keychainservice";
+#warning "CHANGE THE FOLLOWING CONTSTANTS"
+NSString * const kUUIDKeychainKey = @"com.company-name.app-name.uuid";
+NSString * const kIDFAKeychainKey = @"com.company-name.app-name.idfa";
+NSString * const kIDFVKeychainKey = @"com.company-name.app-name.idfv";
+NSString * const kMacAddressKeychainKey = @"com.company-name.app-name.macaddress";
+NSString * const kKeychainService = @"com.company-name.app-name.keychainservice";
 
 #import "KeychainWrapper.h"
 
