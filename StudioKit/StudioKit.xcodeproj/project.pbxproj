@@ -7,25 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2541B71A04F77800729D6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A2541AF1A04F77800729D6B /* InfoPlist.strings */; };
+		2A2541B81A04F77800729D6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2541B11A04F77800729D6B /* Images.xcassets */; };
+		2A2541B91A04F77800729D6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541B21A04F77800729D6B /* main.m */; };
+		2A2541BA1A04F77800729D6B /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541B41A04F77800729D6B /* SKAppDelegate.m */; };
+		2A2541BB1A04F77800729D6B /* StudioKit-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A2541B51A04F77800729D6B /* StudioKit-Info.plist */; };
+		2A2541CC1A04F79000729D6B /* SKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541BD1A04F79000729D6B /* SKColor.m */; };
+		2A2541CD1A04F79000729D6B /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541C01A04F79000729D6B /* NSDate+Components.m */; };
+		2A2541CE1A04F79000729D6B /* SKFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541C21A04F79000729D6B /* SKFonts.m */; };
+		2A2541CF1A04F79000729D6B /* StudioKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541C41A04F79000729D6B /* StudioKit.m */; };
+		2A2541D01A04F79000729D6B /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541C71A04F79000729D6B /* UIActionSheet+Blocks.m */; };
+		2A2541D11A04F79000729D6B /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541C91A04F79000729D6B /* UIAlertView+Blocks.m */; };
+		2A2541D21A04F79000729D6B /* UIButton+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541CB1A04F79000729D6B /* UIButton+Blocks.m */; };
 		2AE0D34518FA66B100719FA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0D34418FA66B100719FA5 /* Foundation.framework */; };
 		2AE0D34718FA66B100719FA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0D34618FA66B100719FA5 /* CoreGraphics.framework */; };
 		2AE0D34918FA66B100719FA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0D34818FA66B100719FA5 /* UIKit.framework */; };
-		2AE0D34F18FA66B100719FA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE0D34D18FA66B100719FA5 /* InfoPlist.strings */; };
-		2AE0D35118FA66B100719FA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D35018FA66B100719FA5 /* main.m */; };
-		2AE0D35518FA66B100719FA5 /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D35418FA66B100719FA5 /* SKAppDelegate.m */; };
-		2AE0D35718FA66B100719FA5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE0D35618FA66B100719FA5 /* Images.xcassets */; };
 		2AE0D35E18FA66B100719FA5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0D35D18FA66B100719FA5 /* XCTest.framework */; };
 		2AE0D35F18FA66B100719FA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0D34418FA66B100719FA5 /* Foundation.framework */; };
 		2AE0D36018FA66B100719FA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0D34818FA66B100719FA5 /* UIKit.framework */; };
 		2AE0D36818FA66B100719FA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE0D36618FA66B100719FA5 /* InfoPlist.strings */; };
 		2AE0D36A18FA66B100719FA5 /* StudioKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D36918FA66B100719FA5 /* StudioKitTests.m */; };
-		2AE0D37B18FA676B00719FA5 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D37618FA676B00719FA5 /* UIActionSheet+Blocks.m */; };
-		2AE0D37C18FA676B00719FA5 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D37818FA676B00719FA5 /* UIAlertView+Blocks.m */; };
-		2AE0D37D18FA676B00719FA5 /* UIButton+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D37A18FA676B00719FA5 /* UIButton+Blocks.m */; };
-		2AE0D38018FA67B700719FA5 /* StudioKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D37F18FA67B700719FA5 /* StudioKit.m */; };
-		2AE0D38718FA68A800719FA5 /* SKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D38618FA68A800719FA5 /* SKColor.m */; };
-		2AE0D38A18FA6AE400719FA5 /* SKFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D38918FA6AE400719FA5 /* SKFonts.m */; };
-		2AFC406119F8C93900C80D59 /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC406019F8C93900C80D59 /* NSDate+Components.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,36 +40,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A2541B01A04F77800729D6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		2A2541B11A04F77800729D6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
+		2A2541B21A04F77800729D6B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		2A2541B31A04F77800729D6B /* SKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		2A2541B41A04F77800729D6B /* SKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		2A2541B51A04F77800729D6B /* StudioKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StudioKit-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2A2541B61A04F77800729D6B /* StudioKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StudioKit-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		2A2541BC1A04F79000729D6B /* SKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKColor.h; path = StudioKit/SKColor.h; sourceTree = SOURCE_ROOT; };
+		2A2541BD1A04F79000729D6B /* SKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKColor.m; path = StudioKit/SKColor.m; sourceTree = SOURCE_ROOT; };
+		2A2541BF1A04F79000729D6B /* NSDate+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Components.h"; sourceTree = "<group>"; };
+		2A2541C01A04F79000729D6B /* NSDate+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Components.m"; sourceTree = "<group>"; };
+		2A2541C11A04F79000729D6B /* SKFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKFonts.h; path = StudioKit/SKFonts.h; sourceTree = SOURCE_ROOT; };
+		2A2541C21A04F79000729D6B /* SKFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKFonts.m; path = StudioKit/SKFonts.m; sourceTree = SOURCE_ROOT; };
+		2A2541C31A04F79000729D6B /* StudioKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudioKit.h; path = StudioKit/StudioKit.h; sourceTree = SOURCE_ROOT; };
+		2A2541C41A04F79000729D6B /* StudioKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudioKit.m; path = StudioKit/StudioKit.m; sourceTree = SOURCE_ROOT; };
+		2A2541C61A04F79000729D6B /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		2A2541C71A04F79000729D6B /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		2A2541C81A04F79000729D6B /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		2A2541C91A04F79000729D6B /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		2A2541CA1A04F79000729D6B /* UIButton+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Blocks.h"; sourceTree = "<group>"; };
+		2A2541CB1A04F79000729D6B /* UIButton+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Blocks.m"; sourceTree = "<group>"; };
 		2AE0D34118FA66B100719FA5 /* StudioKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudioKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE0D34418FA66B100719FA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2AE0D34618FA66B100719FA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2AE0D34818FA66B100719FA5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2AE0D34C18FA66B100719FA5 /* StudioKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StudioKit-Info.plist"; sourceTree = "<group>"; };
-		2AE0D34E18FA66B100719FA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2AE0D35018FA66B100719FA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2AE0D35218FA66B100719FA5 /* StudioKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudioKit-Prefix.pch"; sourceTree = "<group>"; };
-		2AE0D35318FA66B100719FA5 /* SKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKAppDelegate.h; sourceTree = "<group>"; };
-		2AE0D35418FA66B100719FA5 /* SKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKAppDelegate.m; sourceTree = "<group>"; };
-		2AE0D35618FA66B100719FA5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2AE0D35C18FA66B100719FA5 /* StudioKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudioKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE0D35D18FA66B100719FA5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2AE0D36518FA66B100719FA5 /* StudioKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StudioKitTests-Info.plist"; sourceTree = "<group>"; };
 		2AE0D36718FA66B100719FA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2AE0D36918FA66B100719FA5 /* StudioKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudioKitTests.m; sourceTree = "<group>"; };
-		2AE0D37518FA676B00719FA5 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
-		2AE0D37618FA676B00719FA5 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
-		2AE0D37718FA676B00719FA5 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
-		2AE0D37818FA676B00719FA5 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
-		2AE0D37918FA676B00719FA5 /* UIButton+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Blocks.h"; sourceTree = "<group>"; };
-		2AE0D37A18FA676B00719FA5 /* UIButton+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Blocks.m"; sourceTree = "<group>"; };
-		2AE0D37E18FA67B700719FA5 /* StudioKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudioKit.h; sourceTree = "<group>"; };
-		2AE0D37F18FA67B700719FA5 /* StudioKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudioKit.m; sourceTree = "<group>"; };
-		2AE0D38518FA68A800719FA5 /* SKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKColor.h; sourceTree = "<group>"; };
-		2AE0D38618FA68A800719FA5 /* SKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKColor.m; sourceTree = "<group>"; };
-		2AE0D38818FA6AE400719FA5 /* SKFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFonts.h; sourceTree = "<group>"; };
-		2AE0D38918FA6AE400719FA5 /* SKFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFonts.m; sourceTree = "<group>"; };
-		2AFC405F19F8C93900C80D59 /* NSDate+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Components.h"; sourceTree = "<group>"; };
-		2AFC406019F8C93900C80D59 /* NSDate+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Components.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A2541AE1A04F77800729D6B /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				2A2541AF1A04F77800729D6B /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		2A2541BE1A04F79000729D6B /* SKDate */ = {
+			isa = PBXGroup;
+			children = (
+				2A2541BF1A04F79000729D6B /* NSDate+Components.h */,
+				2A2541C01A04F79000729D6B /* NSDate+Components.m */,
+			);
+			name = SKDate;
+			path = StudioKit/SKDate;
+			sourceTree = SOURCE_ROOT;
+		};
+		2A2541C51A04F79000729D6B /* UIKit+Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				2A2541C61A04F79000729D6B /* UIActionSheet+Blocks.h */,
+				2A2541C71A04F79000729D6B /* UIActionSheet+Blocks.m */,
+				2A2541C81A04F79000729D6B /* UIAlertView+Blocks.h */,
+				2A2541C91A04F79000729D6B /* UIAlertView+Blocks.m */,
+				2A2541CA1A04F79000729D6B /* UIButton+Blocks.h */,
+				2A2541CB1A04F79000729D6B /* UIButton+Blocks.m */,
+			);
+			name = "UIKit+Blocks";
+			path = "StudioKit/UIKit+Blocks";
+			sourceTree = SOURCE_ROOT;
+		};
 		2AE0D33818FA66B100719FA5 = {
 			isa = PBXGroup;
 			children = (
@@ -129,23 +162,15 @@
 		2AE0D34A18FA66B100719FA5 /* StudioKit */ = {
 			isa = PBXGroup;
 			children = (
-				2AE0D35318FA66B100719FA5 /* SKAppDelegate.h */,
-				2AE0D35418FA66B100719FA5 /* SKAppDelegate.m */,
-				2AE0D35618FA66B100719FA5 /* Images.xcassets */,
-				2AE0D34B18FA66B100719FA5 /* Supporting Files */,
+				2A2541AE1A04F77800729D6B /* en.lproj */,
+				2A2541B11A04F77800729D6B /* Images.xcassets */,
+				2A2541B21A04F77800729D6B /* main.m */,
+				2A2541B31A04F77800729D6B /* SKAppDelegate.h */,
+				2A2541B41A04F77800729D6B /* SKAppDelegate.m */,
+				2A2541B51A04F77800729D6B /* StudioKit-Info.plist */,
+				2A2541B61A04F77800729D6B /* StudioKit-Prefix.pch */,
 			);
 			path = StudioKit;
-			sourceTree = "<group>";
-		};
-		2AE0D34B18FA66B100719FA5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2AE0D34C18FA66B100719FA5 /* StudioKit-Info.plist */,
-				2AE0D34D18FA66B100719FA5 /* InfoPlist.strings */,
-				2AE0D35018FA66B100719FA5 /* main.m */,
-				2AE0D35218FA66B100719FA5 /* StudioKit-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2AE0D36318FA66B100719FA5 /* StudioKitTests */ = {
@@ -169,38 +194,16 @@
 		2AE0D37318FA676B00719FA5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2AFC405E19F8C92700C80D59 /* SKDate */,
-				2AE0D37E18FA67B700719FA5 /* StudioKit.h */,
-				2AE0D37F18FA67B700719FA5 /* StudioKit.m */,
-				2AE0D37418FA676B00719FA5 /* UIKit+Blocks */,
-				2AE0D38518FA68A800719FA5 /* SKColor.h */,
-				2AE0D38618FA68A800719FA5 /* SKColor.m */,
-				2AE0D38818FA6AE400719FA5 /* SKFonts.h */,
-				2AE0D38918FA6AE400719FA5 /* SKFonts.m */,
+				2A2541BC1A04F79000729D6B /* SKColor.h */,
+				2A2541BD1A04F79000729D6B /* SKColor.m */,
+				2A2541BE1A04F79000729D6B /* SKDate */,
+				2A2541C11A04F79000729D6B /* SKFonts.h */,
+				2A2541C21A04F79000729D6B /* SKFonts.m */,
+				2A2541C31A04F79000729D6B /* StudioKit.h */,
+				2A2541C41A04F79000729D6B /* StudioKit.m */,
+				2A2541C51A04F79000729D6B /* UIKit+Blocks */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		2AE0D37418FA676B00719FA5 /* UIKit+Blocks */ = {
-			isa = PBXGroup;
-			children = (
-				2AE0D37518FA676B00719FA5 /* UIActionSheet+Blocks.h */,
-				2AE0D37618FA676B00719FA5 /* UIActionSheet+Blocks.m */,
-				2AE0D37718FA676B00719FA5 /* UIAlertView+Blocks.h */,
-				2AE0D37818FA676B00719FA5 /* UIAlertView+Blocks.m */,
-				2AE0D37918FA676B00719FA5 /* UIButton+Blocks.h */,
-				2AE0D37A18FA676B00719FA5 /* UIButton+Blocks.m */,
-			);
-			path = "UIKit+Blocks";
-			sourceTree = "<group>";
-		};
-		2AFC405E19F8C92700C80D59 /* SKDate */ = {
-			isa = PBXGroup;
-			children = (
-				2AFC405F19F8C93900C80D59 /* NSDate+Components.h */,
-				2AFC406019F8C93900C80D59 /* NSDate+Components.m */,
-			);
-			path = SKDate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,8 +285,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE0D34F18FA66B100719FA5 /* InfoPlist.strings in Resources */,
-				2AE0D35718FA66B100719FA5 /* Images.xcassets in Resources */,
+				2A2541B71A04F77800729D6B /* InfoPlist.strings in Resources */,
+				2A2541B81A04F77800729D6B /* Images.xcassets in Resources */,
+				2A2541BB1A04F77800729D6B /* StudioKit-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,15 +306,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE0D38018FA67B700719FA5 /* StudioKit.m in Sources */,
-				2AE0D35518FA66B100719FA5 /* SKAppDelegate.m in Sources */,
-				2AFC406119F8C93900C80D59 /* NSDate+Components.m in Sources */,
-				2AE0D37D18FA676B00719FA5 /* UIButton+Blocks.m in Sources */,
-				2AE0D37C18FA676B00719FA5 /* UIAlertView+Blocks.m in Sources */,
-				2AE0D38A18FA6AE400719FA5 /* SKFonts.m in Sources */,
-				2AE0D37B18FA676B00719FA5 /* UIActionSheet+Blocks.m in Sources */,
-				2AE0D38718FA68A800719FA5 /* SKColor.m in Sources */,
-				2AE0D35118FA66B100719FA5 /* main.m in Sources */,
+				2A2541CF1A04F79000729D6B /* StudioKit.m in Sources */,
+				2A2541D21A04F79000729D6B /* UIButton+Blocks.m in Sources */,
+				2A2541D11A04F79000729D6B /* UIAlertView+Blocks.m in Sources */,
+				2A2541D01A04F79000729D6B /* UIActionSheet+Blocks.m in Sources */,
+				2A2541CC1A04F79000729D6B /* SKColor.m in Sources */,
+				2A2541BA1A04F77800729D6B /* SKAppDelegate.m in Sources */,
+				2A2541CE1A04F79000729D6B /* SKFonts.m in Sources */,
+				2A2541CD1A04F79000729D6B /* NSDate+Components.m in Sources */,
+				2A2541B91A04F77800729D6B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,10 +337,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2AE0D34D18FA66B100719FA5 /* InfoPlist.strings */ = {
+		2A2541AF1A04F77800729D6B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2AE0D34E18FA66B100719FA5 /* en */,
+				2A2541B01A04F77800729D6B /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
