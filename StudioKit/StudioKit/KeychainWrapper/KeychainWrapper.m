@@ -48,7 +48,7 @@ NSString * const kKeychainService = @"com.company-name.app-name.keychainservice"
     status = SecItemCopyMatching((__bridge CFDictionaryRef)searchDictionary, &resultRef);
     if (status != errSecSuccess)
     {
-        DDLogError(@"Keychain SEARCH Err %ld", status);
+        NSLog(@"Keychain SEARCH Err %zd", status);
     }
     CFDataRef resultCFData = (CFDataRef)resultRef;
     result = (__bridge NSData *)resultCFData;
@@ -80,7 +80,7 @@ NSString * const kKeychainService = @"com.company-name.app-name.keychainservice"
     
     
     if (status == errSecSuccess) {
-        DDLogInfo(@"keychain created");
+        NSLog(@"keychain created");
         return YES;
     }
     //NSLog(@"CREATE %ld", status);

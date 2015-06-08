@@ -87,6 +87,8 @@
 
 +(NSString *) durationFrom:(NSString *)fromTime to:(NSString *)toTime;
 
++ (NSDictionary *)durationComponents:(NSTimeInterval)interval;
+
 
 +(NSString *) generateStringFromArray:(NSArray *)array andAddString:(NSString *)string;
 +(NSString *) stringFromArray:(NSArray *)array separator:(NSString *)separator;

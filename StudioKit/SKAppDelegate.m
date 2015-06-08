@@ -7,6 +7,7 @@
 //
 
 #import "SKAppDelegate.h"
+#import "StudioKit.h"
 
 @implementation SKAppDelegate
 
@@ -15,6 +16,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    [StudioKit readableDuration:6510];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -27,7 +27,7 @@
 /*
  * Runtime association key.
  */
-static NSString *kHandlerAssociatedKey = @"kHandlerAssociatedKey";
+static NSString *kHandlerAssociatedKey = @"kUIActionSheetHandlerAssociatedKey";
 
 @implementation UIActionSheet (Blocks)
 

@@ -7,6 +7,7 @@
 //
 
 #import "StudioKit.h"
+#import <math.h>
 
 @implementation StudioKit
 
@@ -80,7 +81,24 @@
     //return [NSString stringWithFormat:@"%d.%d.%d", duration.hour, duration.minute, duration.second];
     return [formatter stringFromDate:duration];
 }
-
++ (NSDictionary *)durationComponents:(NSTimeInterval)interval
+{
+    NSInteger seconds = 0;
+    NSInteger minutes = 0;
+    NSInteger hours = 0;
+    
+    hours = (NSInteger)(interval/3600);
+    NSInteger bal = (NSInteger)(fmod(interval, 3600));
+    minutes = (NSInteger)(bal/60);
+    bal = (NSInteger)(fmod(bal, 60));
+    seconds = bal;
+    
+    NSLog(@"%zd %zd %zd", hours, minutes, seconds);
+    
+    return <#expression#>
+    
+    return nil;
+}
 
 #pragma mark - Array = String = Array
 +(NSString *) generateStringFromArray:(NSArray *)array andAddString:(NSString *)string

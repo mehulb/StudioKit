@@ -27,10 +27,10 @@
 {
     [super loadView];
     
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 44, SCREEN_BOUNDS.size.width, 1)];
-    lineView.backgroundColor = ThemeColorPrimaryPink;
+    //UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 44, SCREEN_BOUNDS.size.width, 1)];
+    //lineView.backgroundColor = ThemeColorPrimaryPink;
     
-    [self.navigationBar addSubview:lineView];
+    //[self.navigationBar addSubview:lineView];
 }
 - (void)viewDidLoad
 {

@@ -11,7 +11,6 @@
 		2A2541B81A04F77800729D6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2541B11A04F77800729D6B /* Images.xcassets */; };
 		2A2541B91A04F77800729D6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541B21A04F77800729D6B /* main.m */; };
 		2A2541BA1A04F77800729D6B /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541B41A04F77800729D6B /* SKAppDelegate.m */; };
-		2A2541BB1A04F77800729D6B /* StudioKit-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A2541B51A04F77800729D6B /* StudioKit-Info.plist */; };
 		2A2541CC1A04F79000729D6B /* SKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541BD1A04F79000729D6B /* SKColor.m */; };
 		2A2541CD1A04F79000729D6B /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541C01A04F79000729D6B /* NSDate+Components.m */; };
 		2A2541CE1A04F79000729D6B /* SKFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2541C21A04F79000729D6B /* SKFonts.m */; };
@@ -47,7 +46,7 @@
 		2A2541B21A04F77800729D6B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
 		2A2541B31A04F77800729D6B /* SKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		2A2541B41A04F77800729D6B /* SKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAppDelegate.m; sourceTree = SOURCE_ROOT; };
-		2A2541B51A04F77800729D6B /* StudioKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StudioKit-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2A2541B51A04F77800729D6B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		2A2541B61A04F77800729D6B /* StudioKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StudioKit-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		2A2541BC1A04F79000729D6B /* SKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKColor.h; path = StudioKit/SKColor.h; sourceTree = SOURCE_ROOT; };
 		2A2541BD1A04F79000729D6B /* SKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKColor.m; path = StudioKit/SKColor.m; sourceTree = SOURCE_ROOT; };
@@ -183,7 +182,7 @@
 				2A2541B21A04F77800729D6B /* main.m */,
 				2A2541B31A04F77800729D6B /* SKAppDelegate.h */,
 				2A2541B41A04F77800729D6B /* SKAppDelegate.m */,
-				2A2541B51A04F77800729D6B /* StudioKit-Info.plist */,
+				2A2541B51A04F77800729D6B /* Info.plist */,
 				2A2541B61A04F77800729D6B /* StudioKit-Prefix.pch */,
 			);
 			path = StudioKit;
@@ -306,7 +305,6 @@
 			files = (
 				2A2541B71A04F77800729D6B /* InfoPlist.strings in Resources */,
 				2A2541B81A04F77800729D6B /* Images.xcassets in Resources */,
-				2A2541BB1A04F77800729D6B /* StudioKit-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,8 +454,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StudioKit/StudioKit-Prefix.pch";
-				INFOPLIST_FILE = "StudioKit/StudioKit-Info.plist";
+				GCC_PREFIX_HEADER = "StudioKit-Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -471,8 +469,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StudioKit/StudioKit-Prefix.pch";
-				INFOPLIST_FILE = "StudioKit/StudioKit-Info.plist";
+				GCC_PREFIX_HEADER = "StudioKit-Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
