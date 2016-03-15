@@ -28,6 +28,8 @@
 		2AE0D36018FA66B100719FA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0D34818FA66B100719FA5 /* UIKit.framework */; };
 		2AE0D36818FA66B100719FA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE0D36618FA66B100719FA5 /* InfoPlist.strings */; };
 		2AE0D36A18FA66B100719FA5 /* StudioKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0D36918FA66B100719FA5 /* StudioKitTests.m */; };
+		2AF1C55E1C97F363007B35DC /* DeviceDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1C5591C97F363007B35DC /* DeviceDetails.m */; };
+		2AF1C5601C97F363007B35DC /* SessionDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1C55D1C97F363007B35DC /* SessionDetails.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		2AE0D36518FA66B100719FA5 /* StudioKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StudioKitTests-Info.plist"; sourceTree = "<group>"; };
 		2AE0D36718FA66B100719FA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2AE0D36918FA66B100719FA5 /* StudioKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudioKitTests.m; sourceTree = "<group>"; };
+		2AF1C5581C97F363007B35DC /* DeviceDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDetails.h; sourceTree = "<group>"; };
+		2AF1C5591C97F363007B35DC /* DeviceDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDetails.m; sourceTree = "<group>"; };
+		2AF1C55C1C97F363007B35DC /* SessionDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionDetails.h; sourceTree = "<group>"; };
+		2AF1C55D1C97F363007B35DC /* SessionDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionDetails.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +215,7 @@
 		2AE0D37318FA676B00719FA5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2AF1C5571C97F363007B35DC /* Utilities */,
 				2A2542BA1A04FA9600729D6B /* MBNavigationController.h */,
 				2A2542BB1A04FA9600729D6B /* MBNavigationController.m */,
 				2A2542931A04F9AB00729D6B /* KeychainWrapper */,
@@ -222,6 +229,17 @@
 				2A2541C51A04F79000729D6B /* UIKit+Blocks */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		2AF1C5571C97F363007B35DC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2AF1C5581C97F363007B35DC /* DeviceDetails.h */,
+				2AF1C5591C97F363007B35DC /* DeviceDetails.m */,
+				2AF1C55C1C97F363007B35DC /* SessionDetails.h */,
+				2AF1C55D1C97F363007B35DC /* SessionDetails.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,12 +341,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF1C55E1C97F363007B35DC /* DeviceDetails.m in Sources */,
 				2A2541CF1A04F79000729D6B /* StudioKit.m in Sources */,
 				2A2541D21A04F79000729D6B /* UIButton+Blocks.m in Sources */,
 				2A2541D11A04F79000729D6B /* UIAlertView+Blocks.m in Sources */,
 				2A2541D01A04F79000729D6B /* UIActionSheet+Blocks.m in Sources */,
 				2A2542BC1A04FA9600729D6B /* MBNavigationController.m in Sources */,
 				2A2541CC1A04F79000729D6B /* SKColor.m in Sources */,
+				2AF1C5601C97F363007B35DC /* SessionDetails.m in Sources */,
 				2A2541BA1A04F77800729D6B /* SKAppDelegate.m in Sources */,
 				2A2541CE1A04F79000729D6B /* SKFonts.m in Sources */,
 				2A2541CD1A04F79000729D6B /* NSDate+Components.m in Sources */,
